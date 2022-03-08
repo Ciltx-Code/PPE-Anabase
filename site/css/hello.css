@@ -1,0 +1,236 @@
+@font-face{
+  font-family: "Acme";
+  src: url("fonts/Acme.ttf");
+}
+
+.texteAccueil{
+  text-shadow: white 2px 5px;
+  text-align: left;
+  width: 48%;
+  margin-top: 15%;
+  margin-left: 10%;
+  font-size: 25px;
+}
+
+.main{
+  position: absolute;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/fond.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  filter: blur(0px);
+  overflow: auto;
+}
+
+#imgAjouter img{
+  cursor: pointer;
+}
+
+.popup{
+  text-align: center;
+  display: none;
+  position: fixed;
+  left: 26%;
+  top:9%;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  filter: opacity(0.1);
+}
+
+
+.btn{
+  transition: 0.5s;
+  font-size: 17px;
+  background: linear-gradient(to right, #EED05E, #FF7900);
+  color: black;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 49%;
+  margin-right: 2px;
+  margin-bottom:10px;
+  opacity: 0.5;
+}
+
+.btn:active, .btn:focus{
+  outline-style: none;
+}
+
+.btn:hover, .btn:hover {
+  opacity: 1;
+}
+
+.form-container {
+  width: 700px;
+  max-height: 700px;
+  padding: 10px 20px 10px 20px;
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+
+.menu a{
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+}
+
+.menu{
+
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  font-size: 150%;
+  float: right;  
+  margin-right: 1%;
+}
+
+
+.menu li{
+  display: inline-block;
+  margin-right: 15px;
+  list-style: none; 
+
+}
+
+.croix{
+  cursor: pointer;
+  transition: 0.5s;
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  right: 55px;
+  top:5%;
+  opacity: 0.5;
+}
+
+.croix:hover{
+
+  opacity: 1;
+}
+.menu li :hover{
+  color: #EED05E;
+}
+
+input[type='radio']:after {
+  cursor: pointer;
+  width: 20px; height: 20px;
+  border-radius: 20px; 
+  top: -6px; 
+  left: -6px; 
+  position: relative; 
+  background-color: #d1d3d1; 
+  content: ''; 
+  display: inline-block; 
+  visibility: visible; 
+  border: 2px solid black; 
+  transition: 0.3s;
+}
+
+input[type='radio']:hover:after {
+  background-color: #ffa500; 
+}
+
+input[type='radio']:checked:after {
+  cursor: pointer;
+  width: 20px; height: 20px;
+  border-radius: 20px; 
+  top: -6px; 
+  left: -6px;  
+  position: relative; 
+  background-color: #ffa500; 
+  content: ''; 
+  display: inline-block; 
+  visibility: visible; 
+  border: 2px solid black; 
+} 
+
+
+input[type=text], input[type=tel], input[type=date], select, input[type=email] {
+  width: 28%;
+  padding: 12px 20px;
+  margin: 8px 40px 0px -20%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.form-container label{
+  display: block;
+  width: 40%;
+  float: left;
+  text-align: left;
+  margin: 15px 0px 0px 25%;
+}
+
+.alert {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-top: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.warning {background-color: #ff9800;}
+
+
+.initbtn {
+   background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+.form {
+  width: 40%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.form-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.container {
+  padding: 16px;
+}
+
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th{
+	background-color: #C0C0C0;
+}
